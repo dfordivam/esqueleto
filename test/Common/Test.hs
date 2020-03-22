@@ -1490,7 +1490,7 @@ testListOfValues run = do
         liftIO $ ret `shouldBe` [ Entity p1k p1
                                 , Entity p3k p3 ]
 
-    it "EXISTS works for subList_select" $
+    it "NOT EXISTS works for subList_select" $
       run $ do
         p1k <- insert p1
         p2k <- insert p2
